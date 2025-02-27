@@ -1,24 +1,20 @@
-# README
+# Service1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Users service
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+1. Clone the repository
+2. Run `bundle install`
+3. Run `rails db:create && rails db:migrate`
+4. Run `rails s`
 
-* System dependencies
+## Linting
 
-* Configuration
+```bash
+bin/rubocop -A
+```
 
-* Database creation
+## License
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
