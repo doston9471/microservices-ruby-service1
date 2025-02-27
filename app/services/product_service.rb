@@ -4,7 +4,7 @@ class ProductService
   def self.fetch_products
     conn = Faraday.new(
       url: "http://localhost:3001",
-      headers: {"Content-Type" => "application/json"}
+      headers: { "Content-Type" => "application/json" }
     )
 
     response = conn.get("/api/v1/products")

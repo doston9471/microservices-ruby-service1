@@ -43,8 +43,8 @@ module Service1
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'localhost:3001' # Allow service2
-        resource '*', headers: :any, methods: [:get, :post, :put, :patch, :delete]
+        origins "localhost:3001" # Allow service2
+        resource "*", headers: :any, methods: [ :get, :post, :put, :patch, :delete ]
       end
     end
   end
