@@ -50,4 +50,4 @@ end
 
 gem "rack-cors", "~> 2.0"
 
-gem "faraday", "~> 2.12"
+gem "faraday", "~> 2.13"
