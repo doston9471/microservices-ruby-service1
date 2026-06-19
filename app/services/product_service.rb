@@ -2,8 +2,10 @@ require "faraday"
 
 class ProductService
   def self.fetch_products
+    base_url = ENV.fetch("PRODUCTS_SERVICE_URL", "http://localhost:3001")
+
     conn = Faraday.new(
-      url: "http://localhost:3001",
+      url: base_url,
       headers: { "Content-Type" => "application/json" }
     )
 
